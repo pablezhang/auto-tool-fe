@@ -1,6 +1,6 @@
 {
-  "name": "fe-tool",
-  "displayName": "fe-tool",
+  "name": "auto-tool",
+  "displayName": "auto-tool",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -9,7 +9,7 @@
   "categories": [
     "Snippets"
   ],
-  "repository": "https://github.com/pablezhang/fe-tool.git",
+  "repository": "https://github.com/pablezhang/auto-tool.git",
   "main": "./out/extension.js",
   "activationEvents": [],
   "contributes": {
@@ -21,7 +21,7 @@
     ],
     "commands": [
       {
-        "command": "fe-tool.helloWorld",
+        "command": "auto-tool.helloWorld",
         "title": "Hello World"
       }
     ]
