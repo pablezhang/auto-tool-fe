@@ -9,6 +9,7 @@
   "categories": [
     "Snippets"
   ],
+  "publisher": "luckybo0027",
   "repository": "https://github.com/pablezhang/auto-tool.git",
   "main": "./out/extension.js",
   "activationEvents": [],
