@@ -1,9 +1,9 @@
-# auto-tool README
+# auto_tool README
 
 ## VS Code FE snippets
 
 ## Installation
-你需要启动命令面板（Ctrl + Shift + P 或 Cmd + Shift + P），然后输入“Extensions”。在那里，您可以选择显示已安装的代码片段或安装新的代码片段。搜索**auto-tool**代码片段并进行安装。
+你需要启动命令面板（Ctrl + Shift + P 或 Cmd + Shift + P），然后输入“Extensions”。在那里，您可以选择显示已安装的代码片段或安装新的代码片段。搜索**auto_tool**代码片段并进行安装。
 
 ## 支持文件类型 
 * JavaScript (.js)

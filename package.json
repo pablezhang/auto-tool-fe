@@ -1,6 +1,6 @@
 {
-  "name": "@luckybo/auto-tool",
-  "displayName": "auto-tool",
+  "name": "auto_tool",
+  "displayName": "auto_tool",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -21,7 +21,7 @@
     ],
     "commands": [
       {
-        "command": "auto-tool.helloWorld",
+        "command": "auto_tool.helloWorld",
         "title": "Hello World"
       }
     ]
