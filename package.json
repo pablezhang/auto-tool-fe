@@ -7,10 +7,16 @@
     "vscode": "^1.72.0"
   },
   "categories": [
-    "Other"
+    "Snippets"
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./src/snippets.json"
+      }
+    ],
     "commands": [
       {
         "command": "fe-tool.helloWorld",

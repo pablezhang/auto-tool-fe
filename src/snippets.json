@@ -1,0 +1,197 @@
+{
+  "打印": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "log",
+    "body": [
+      "console.log('$1  ----->  ', $1);"
+    ]
+  },
+  "箭头函数没有花括号": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "rf",
+    "body": [
+      "($1) => $2"
+    ]
+  },
+  "const声明一个箭头函数": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "crf",
+    "body": [
+      "const $1 = ($2) => {",
+      "    $3",
+      "}"
+    ]
+  },
+  "const声明变量": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "crv",
+    "body": [
+      "const $1 = $0"
+    ]
+  },
+  "单行的注释快": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cmb",
+    "body": [
+      "/** $1 */"
+    ]
+  },
+  "导出const": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "etn",
+    "body": [
+      "export const $1 = $2;"
+    ]
+  },
+  "mock-对象数组": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsonc",
+    "prefix": "m-ol",
+    "body": [
+      "[",
+      "{$1: $2, $3: $4},",
+      "{$1: $2, $3: $4},",
+      "{$1: $2, $3: $4},",
+      "]"
+    ]
+  },
+  "mock-字符串数组": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsonc",
+    "prefix": "m-sl",
+    "body": [
+      "[ '$1', '$2', '$3' ]"
+    ]
+  },
+  "初始化学习目标": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,jsonc,vue",
+    "prefix": "ing",
+    "body": [
+      " // 学习目标：$1",
+      " // 步骤：",
+      " //  1. $2",
+      " //  2. $3",
+      " //  3. $4",
+      " //  4. $4",
+      " //  5. $4",
+    ]
+  },
+  "初始化学习目标-wx": {
+    "scope": "wxml",
+    "prefix": "ing",
+    "body": [
+      "<!-- ",
+      "  学习目标：$1",
+      "  步骤：",
+      "     1. $2",
+      "     2. $3",
+      "     3. $4",
+      " -->"
+    ]
+  },
+  "create a axios request": {
+    "prefix": "axios",
+    "body": [
+      "export const $1API = (data) => {",
+      "  return request({",
+      "    method: 'post',",
+      "    url: '$2',",
+      "    data",
+      "  })",
+      "}",
+      ""
+    ],
+    "description": "创建一个axios请求"
+  },
+
+  // vue3-------------------------------
+  "生成vue初始模板": {
+    "prefix": "vue3-ts",
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>$2</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "$3",
+      "</style>"
+    ],
+    "description": "Log output to console"
+  },
+  "生成vue初始模板js": {
+    "prefix": "vbase",
+    "body": [
+      "<script setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>$2</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "$3",
+      "</style>"
+    ],
+    "description": "Log output to console"
+  },
+  "创建ref": {
+    "prefix": "useRef",
+    "body": [
+      "const ${1:first} = ref(${2:secod})"
+    ],
+    "scope": "typescript,javascript,vue"
+  },
+  "创建ref-绑定dom": {
+    "prefix": "useRefDOM",
+    "body": [
+      "const ${1:first} = ref<$2 | null>(null)"
+    ],
+    "scope": "typescript,vue"
+  },
+  "获取store": {
+    "prefix": "useStore",
+    "body": [
+      "const store = use$0Store()"
+    ],
+    "scope": "typescript,javascript,vue"
+  },
+  "获取router": {
+    "prefix": "useRouter",
+    "body": [
+      "const router = useRouter()"
+    ],
+    "scope": "typescript,javascript,vue"
+  },
+  "生成插槽模板": {
+    "prefix": "useSlot",
+    "body": [
+      "<template #$1>",
+      "  <$2></$2>",
+      "</template>"
+    ],
+    "scope": "html"
+  },
+  "定义props": {
+    "prefix": "useProps",
+    "body": [
+      "interface Props {",
+      "  ${1:name}: $2",
+      "}",
+      "defineProps<Props>($3)"
+    ],
+    "scope": "typescript,vue"
+  },
+  "定义emit": {
+    "prefix": "useEmits",
+    "body": [
+      "interface Emits {",
+      "  (${1:name}: '$2'): ${3:void}",
+      "}",
+      "const emit = defineEmits<Emits>()"
+    ],
+    "scope": "typescript,vue"
+  }
+}
